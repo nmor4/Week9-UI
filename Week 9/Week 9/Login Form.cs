@@ -51,5 +51,33 @@ namespace Week_9
             UsernameTextbox.Clear();
             PasswordTextbox.Clear();
         }
+
+        private void UsernameTextbox_Leave(object sender, EventArgs e)
+        {
+            if (UsernameTextbox.TextLength < 6)
+            {
+                LoginMessage.Text = "Username too short";
+                LoginMessage.ForeColor = Color.Red;
+            }
+            else
+            {
+                LoginMessage.Text = "Please login";
+                LoginMessage.ForeColor = Color.Black;
+            }
+        }
+
+        private void PasswordTextbox_Leave(object sender, EventArgs e)
+        {
+            if (PasswordTextbox.TextLength < 6)
+            {
+                LoginMessage.Text = "Password too short";
+                LoginMessage.ForeColor = Color.Red;
+            }
+            else
+            {
+                LoginMessage.Text = "Please login";
+                LoginMessage.ForeColor = Color.Black;
+            }
+        }
     }
 }

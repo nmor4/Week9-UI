@@ -55,6 +55,7 @@
             this.UsernameTextbox.Size = new System.Drawing.Size(490, 45);
             this.UsernameTextbox.TabIndex = 1;
             this.UsernameTextbox.TextChanged += new System.EventHandler(this.UsernameTextbox_TextChanged);
+            this.UsernameTextbox.Leave += new System.EventHandler(this.UsernameTextbox_Leave);
             // 
             // PasswordTextbox
             // 
@@ -64,6 +65,7 @@
             this.PasswordTextbox.PasswordChar = '*';
             this.PasswordTextbox.Size = new System.Drawing.Size(490, 45);
             this.PasswordTextbox.TabIndex = 3;
+            this.PasswordTextbox.Leave += new System.EventHandler(this.PasswordTextbox_Leave);
             // 
             // PasswordLabel
             // 
