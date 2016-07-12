@@ -2,6 +2,7 @@
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
+using System.Diagnostics;
 using System.Drawing;
 using System.Linq;
 using System.Text;
@@ -30,6 +31,25 @@ namespace Week_9
         private void label1_Click_1(object sender, EventArgs e)
         {
 
+        }
+
+        private void LoginButton_Click(object sender, EventArgs e)
+        {
+            Debug.WriteLine("Username: "+UsernameTextbox.Text);
+            Debug.WriteLine("Password: "+PasswordTextbox.Text);
+            this._clearForm();
+        }
+
+        private void Form1_Load(object sender, EventArgs e)
+        {
+
+        }
+
+
+        private void _clearForm()
+        {
+            UsernameTextbox.Clear();
+            PasswordTextbox.Clear();
         }
     }
 }
